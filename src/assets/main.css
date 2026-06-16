@@ -1,0 +1,76 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+@theme {
+  --color-gray: #a9a9a9;
+}
+
+.text-outline-1 {
+  -webkit-text-stroke: 6px rgba(255, 255, 255, 0.2);
+}
+
+.text-outline-2 {
+  -webkit-text-stroke: 3px rgba(255, 255, 255, 0.2);
+}
+
+.history-box {
+  background-image: url('./images/history-box.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.winner-box-1 {
+  background-image: url('./images/winner-box-1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.winner-box-2 {
+  background-image: url('./images/winner-box-2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.winner-box-3 {
+  background-image: url('./images/winner-box-3.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.sponsor-box {
+  background-image: url('./images/sponsor-box.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.star {
+  background-image: url('./images/star.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.rocket {
+  background-image: url('./images/rocket.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.introduction-section {
+  background-image: url('./images/bg-introduction.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  background-color: #031446;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
