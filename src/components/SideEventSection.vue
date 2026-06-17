@@ -1,5 +1,13 @@
 <template>
-  <section class="mb-50 pl-20 pr-20 flex flex-col items-center">
+  <section
+    id="side-event"
+    class="scroll-m-45 mb-50 pl-20 pr-20 flex flex-col items-center relative"
+  >
+    <!-- shine decoration -->
+    <div
+      class="absolute w-150 h-150 rounded-full -top-20 -left-70 opacity-50 bg-[radial-gradient(circle,#022894,white)] blur-[200px] -z-100"
+    ></div>
+
     <div class="mb-25 relative">
       <!-- border decoration -->
       <div
@@ -15,6 +23,9 @@
       <div
         class="h-6 w-20 border-white border-r-2 border-b-2 absolute -bottom-2 -right-7.5 rounded-br-sm"
       ></div>
+
+      <!-- star decor -->
+      <div class="star-1 rotate-75 w-30 h-30 -bottom-17 -right-22 absolute z-50"></div>
 
       <h1 class="text-outline-2 text-6xl font-bold">Special Perform</h1>
     </div>

@@ -1,18 +1,21 @@
 <template>
   <header
-    class="w-9/10 flex justify-between items-center justify-self-center bg-white/6 shadow-[0_0_1px_1px_rgba(255,255,255,0.35)] backdrop-blur-sm rounded-[10px] fixed top-10 pl-10 pr-10 pt-1 pb-1 z-999"
+    class="w-9/10 flex justify-between items-center justify-self-center bg-white/6 shadow-[inset_0_0_1px_1px_rgba(255,255,255,0.35),inset_0_0_10px_1px_rgba(0,0,0,0.25)] backdrop-blur-md rounded-[10px] fixed top-10 pl-10 pr-10 pt-1 pb-1 z-999"
   >
-    <div class="flex h-20">
+    <a href="#hero" class="flex h-20">
       <img src="../assets/images/logo-bse.png" class="h-full" />
-    </div>
+    </a>
 
-    <nav class="text-2xl h-15 flex font-medium">
-      <a class="flex items-center h-full p-4"><p>About</p></a>
-      <a class="flex items-center h-full p-4"><p>History</p></a>
-      <a class="flex items-center h-full p-4"><p>Activity</p></a>
-      <a class="flex items-center h-full p-4"><p>Side Event</p></a>
-      <a class="flex items-center h-full p-4"><p>Gallery</p></a>
-      <a class="flex items-center h-full p-4"><p>Register</p></a>
+    <nav class="text-2xl h-15 gap-4 flex font-medium items-center">
+      <a href="#about" class="flex items-center h-full p-4"><p>About</p></a>
+      <a href="#history" class="flex items-center h-full p-4"><p>History</p></a>
+      <a href="#activity" class="flex items-center h-full p-4"><p>Activity</p></a>
+      <a href="#side-event" class="flex items-center h-full p-4"><p>Side Event</p></a>
+      <a href="#gallery" class="flex items-center h-full p-4"><p>Gallery</p></a>
+      <a
+        class="flex items-center h-max p-3 pl-7 pr-7 rounded-3xl bg-linear-to-r bg-[#022894] to-[#031446] cursor-pointer"
+        ><p>Register</p></a
+      >
     </nav>
   </header>
 </template>

@@ -1,5 +1,18 @@
+<script setup lang="ts">
+import WinnerBox from './WinnerBox.vue'
+</script>
+
 <template>
-  <section class="mb-50 pl-20 pr-20 flex flex-col items-center justify-center text-center">
+  <section class="mb-50 pl-20 pr-20 flex flex-col items-center justify-center text-center relative">
+    <!-- shine decoration -->
+    <div
+      class="absolute w-150 h-150 rounded-full -top-50 -right-70 opacity-50 bg-[radial-gradient(circle,#022894,white)] blur-[200px] -z-100"
+    ></div>
+
+    <!-- rocket decor -->
+    <div class="rocket rotate-90 w-45 h-45 -top-40 left-0 absolute -z-50"></div>
+    <div class="rocket w-45 h-45 -bottom-55 right-20 absolute -z-50"></div>
+
     <div class="mb-7 relative">
       <!-- border decoration -->
       <div
@@ -16,6 +29,9 @@
         class="h-6 w-20 border-white border-r-2 border-b-2 absolute -bottom-2 -right-7.5 rounded-br-sm"
       ></div>
 
+      <!-- star decor -->
+      <div class="star-1 rotate-75 w-30 h-30 -top-17 -left-22 absolute z-50"></div>
+
       <h1 class="text-outline-2 text-6xl font-bold">Winner of 2025</h1>
     </div>
 
@@ -24,10 +40,38 @@
       memberikan solusi nyata di Bali Startup Expo 2025.
     </p>
 
-    <div class="w-full grid grid-cols-3 overflow-hidden">
-      <div class="winner-box-2 h-150 w-full"></div>
-      <div class="winner-box-1 h-150 w-full"></div>
-      <div class="winner-box-3 h-150 w-full"></div>
+    <div class="w-full flex items-center justify-center">
+      <div class="relative">
+        <!-- star decor -->
+        <div class="star-1 rotate-4 w-20 h-20 top-0 -right-5 absolute z-50"></div>
+
+        <WinnerBox
+          rank="2"
+          name="Lightbox Painting"
+          description="Transformasi kreatif limbah plastik menjadi produk bernilai guna tinggi melalui inovasi ekonomi sirkular yang berkelanjutan."
+        />
+      </div>
+
+      <div class="relative flex justify-center">
+        <!-- star decor -->
+        <div class="star-1 rotate-78 w-20 h-20 -top-7 ml-10 absolute z-50"></div>
+        <div class="star-1 rotate-78 w-20 h-20 top-0 -right-3 absolute z-50"></div>
+        <div class="star-1 rotate-78 w-20 h-20 -bottom-10 -left-8 absolute z-50"></div>
+
+        <WinnerBox
+          rank="1"
+          name="Pesona Plastik"
+          description="Inovasi dekorasi interior yang memadukan estetika seni rupa dengan teknologi pencahayaan modern yang memukau."
+        />
+      </div>
+
+      <div>
+        <WinnerBox
+          rank="3"
+          name="Green Oil Solution"
+          description="Solusi cerdas pengelolaan minyak jelantah untuk menekan polusi sekaligus menciptakan sumber energi terbarukan."
+        />
+      </div>
     </div>
   </section>
 </template>

@@ -51,8 +51,28 @@
   background-position: center;
 }
 
-.star {
-  background-image: url('./images/star.png');
+.media-partner-box {
+  background-image: url('./images/media-partner-box.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.star-1 {
+  background-image: url('./images/star-1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.star-2 {
+  background-image: url('./images/star-2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.moon {
+  background-image: url('./images/moon.png');
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -69,8 +89,13 @@
   background-size: cover;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #031446;
   font-family: 'Montserrat', sans-serif;
   color: white;
+  overflow-x: hidden;
 }
