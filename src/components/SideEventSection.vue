@@ -1,3 +1,7 @@
+<script setup lang="tsx">
+import { motion } from 'motion-v'
+</script>
+
 <template>
   <section
     id="side-event"
@@ -27,10 +31,21 @@
       <!-- star decor -->
       <div class="star-1 rotate-75 w-30 h-30 -bottom-17 -right-22 absolute z-50"></div>
 
-      <h1 class="text-outline-2 text-6xl font-bold">Special Perform</h1>
+      <motion.h1
+        :initial="{ y: 100, opacity: 0 }"
+        :while-in-view="{ y: 0, opacity: 1 }"
+        :transition="{ duration: 0.4 }"
+        :in-view-options="{ once: true }"
+        class="text-outline-2 text-6xl font-bold"
+        >Special Perform</motion.h1
+      >
     </div>
 
-    <div
+    <motion.div
+      :initial="{ y: 100, opacity: 0 }"
+      :while-in-view="{ y: 0, opacity: 1 }"
+      :transition="{ duration: 0.4 }"
+      :in-view-options="{ once: true }"
       class="w-full gap-2 backdrop-blur-sm rounded-[10px] p-10 flex flex-col justify-center bg-white/15 shadow-[0_0_4px_2px_rgba(255,255,255,0.4)]"
     >
       <div class="gap-10 grid grid-cols-2">
@@ -72,6 +87,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   </section>
 </template>

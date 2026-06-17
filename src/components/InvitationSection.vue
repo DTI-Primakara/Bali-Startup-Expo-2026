@@ -1,3 +1,7 @@
+<script setup lang="tsx">
+import { motion } from 'motion-v'
+</script>
+
 <template>
   <section class="h-screen gap-6 flex flex-col items-center justify-center text-center relative">
     <!-- gradient circle -->
@@ -21,13 +25,25 @@
     <div class="star-1 -rotate-11 w-20 h-20 top-55 right-50 absolute -z-50"></div>
 
     <p class="font-semibold text-sm text-[#164CA4]">FINAL COUNTDOWN</p>
-    <p class="font-semibold text-5xl">
+    <motion.p
+      :initial="{ y: 100, opacity: 0 }"
+      :while-in-view="{ y: 0, opacity: 1 }"
+      :transition="{ duration: 0.4 }"
+      :in-view-options="{ once: true }"
+      class="font-semibold text-5xl"
+    >
       Ready To Launch <br />
       Your Future?
-    </p>
-    <p class="mb-8 font-medium text-md text-gray">
+    </motion.p>
+    <motion.p
+      :initial="{ y: 100, opacity: 0 }"
+      :while-in-view="{ y: 0, opacity: 1 }"
+      :transition="{ duration: 0.4 }"
+      :in-view-options="{ once: true }"
+      class="mb-8 font-medium text-md text-gray"
+    >
       Join Bali Startup Expo 2026 and Become Part of Bali’s Innovation
-    </p>
+    </motion.p>
 
     <button
       class="rounded-[50px] p-8 pl-12 pr-12 font-semibold text-xl bg-linear-to-r bg-[#0466C8] to-[#033E79] flex items-center gap-4 cursor-pointer"

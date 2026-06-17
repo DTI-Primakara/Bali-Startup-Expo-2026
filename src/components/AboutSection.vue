@@ -22,7 +22,7 @@ import { motion } from 'motion-v'
       <motion.div
         :initial="{ y: 100, opacity: 0 }"
         :while-in-view="{ y: 0, opacity: 1 }"
-        :transition="{ duration: 0.4, delay: 0.4 }"
+        :transition="{ duration: 0.4 }"
         :in-view-options="{ once: true }"
         class="w-full gap-6 grid grid-cols-2 grid-rows-2"
       >

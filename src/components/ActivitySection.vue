@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { motion } from 'motion-v'
 import ActivityBox from './ActivityBox.vue'
 </script>
 
@@ -14,7 +15,12 @@ import ActivityBox from './ActivityBox.vue'
     <div class="star-2 rotate-114 w-60 h-60 top-115 -left-10 absolute z-50"></div>
 
     <div class="mb-15 flex justify-between items-center">
-      <div>
+      <motion.div
+        :initial="{ y: 100, opacity: 0 }"
+        :while-in-view="{ y: 0, opacity: 1 }"
+        :transition="{ duration: 0.4 }"
+        :in-view-options="{ once: true }"
+      >
         <div class="gap-4 flex items-center">
           <hr class="w-10 border text-[#0466C8]" />
           <p class="text-xl font-bold">Event</p>
@@ -25,12 +31,18 @@ import ActivityBox from './ActivityBox.vue'
             Activity
           </p>
         </h1>
-      </div>
+      </motion.div>
 
-      <p class="text-xl max-w-120 font-medium text-right">
+      <motion.p
+        :initial="{ y: 100, opacity: 0 }"
+        :while-in-view="{ y: 0, opacity: 1 }"
+        :transition="{ duration: 0.4 }"
+        :in-view-options="{ once: true }"
+        class="text-xl max-w-120 font-medium text-right"
+      >
         Figma ipsum component variant main layer. Inspect clip opacity Dolor sit Amet Lorem ipsum
         variant player sit Inspect.
-      </p>
+      </motion.p>
     </div>
 
     <div class="grid gap-10 grid-cols-2 grid-rows-2">

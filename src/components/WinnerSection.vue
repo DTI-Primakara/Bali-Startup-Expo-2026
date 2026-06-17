@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { motion } from 'motion-v'
 import WinnerBox from './WinnerBox.vue'
 </script>
 
@@ -32,15 +33,34 @@ import WinnerBox from './WinnerBox.vue'
       <!-- star decor -->
       <div class="star-1 rotate-75 w-30 h-30 -top-17 -left-22 absolute z-50"></div>
 
-      <h1 class="text-outline-2 text-6xl font-bold">Winner of 2025</h1>
+      <motion.h1
+        :initial="{ y: 100, opacity: 0 }"
+        :while-in-view="{ y: 0, opacity: 1 }"
+        :transition="{ duration: 0.4 }"
+        :in-view-options="{ once: true }"
+        class="text-outline-2 text-6xl font-bold"
+        >Winner of 2025</motion.h1
+      >
     </div>
 
-    <p class="mb-15 text-xl font-medium">
+    <motion.p
+      :initial="{ y: 100, opacity: 0 }"
+      :while-in-view="{ y: 0, opacity: 1 }"
+      :transition="{ duration: 0.4 }"
+      :in-view-options="{ once: true }"
+      class="mb-15 text-xl font-medium"
+    >
       Rayakan inovasi tanpa batas. Inilah deretan startup terbaik yang berhasil menginspirasi dan
       memberikan solusi nyata di Bali Startup Expo 2025.
-    </p>
+    </motion.p>
 
-    <div class="w-full flex items-center justify-center">
+    <motion.div
+      :initial="{ y: 100, opacity: 0 }"
+      :while-in-view="{ y: 0, opacity: 1 }"
+      :transition="{ duration: 0.4 }"
+      :in-view-options="{ once: true }"
+      class="w-full flex items-center justify-center"
+    >
       <div class="relative">
         <!-- star decor -->
         <div class="star-1 rotate-4 w-20 h-20 top-0 -right-5 absolute z-50"></div>
@@ -72,6 +92,6 @@ import WinnerBox from './WinnerBox.vue'
           description="Solusi cerdas pengelolaan minyak jelantah untuk menekan polusi sekaligus menciptakan sumber energi terbarukan."
         />
       </div>
-    </div>
+    </motion.div>
   </section>
 </template>

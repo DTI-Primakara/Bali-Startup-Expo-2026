@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { motion } from 'motion-v'
 import MediaPartnerBox from './MediaPartnerBox.vue'
 
 const MEDIA_PARTNER_COUNT = 15
@@ -30,13 +31,26 @@ const MEDIA_PARTNER_COUNT = 15
       <!-- star decor -->
       <div class="star-1 rotate-75 w-30 h-30 -top-17 -left-22 absolute z-50"></div>
 
-      <h1 class="text-outline-2 text-6xl font-bold">Media Partner</h1>
+      <motion.h1
+        :initial="{ y: 100, opacity: 0 }"
+        :while-in-view="{ y: 0, opacity: 1 }"
+        :transition="{ duration: 0.4 }"
+        :in-view-options="{ once: true }"
+        class="text-outline-2 text-6xl font-bold"
+        >Media Partner</motion.h1
+      >
     </div>
 
-    <p class="mb-10 pl-30 pr-40 text-xl font-medium">
+    <motion.p
+      :initial="{ y: 100, opacity: 0 }"
+      :while-in-view="{ y: 0, opacity: 1 }"
+      :transition="{ duration: 0.4 }"
+      :in-view-options="{ once: true }"
+      class="mb-10 pl-30 pr-40 text-xl font-medium"
+    >
       Figma ipsum component variant main layer. Inspect clip opacity effect style invite export.
       Polygon pixel team layout hand inspect team.
-    </p>
+    </motion.p>
 
     <div class="w-max flex self-start infinite-marquee">
       <MediaPartnerBox

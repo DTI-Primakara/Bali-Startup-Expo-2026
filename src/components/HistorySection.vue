@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import HistoryBox from './HistoryBox.vue'
+import { motion } from 'motion-v'
 </script>
 
 <template>
@@ -23,13 +24,26 @@ import HistoryBox from './HistoryBox.vue'
         class="h-6 w-20 border-white border-r-2 border-b-2 absolute -bottom-2 -right-3.5 rounded-br-sm"
       ></div>
 
-      <h1 class="text-outline-2 text-6xl font-bold">History of BSE</h1>
+      <motion.h1
+        :initial="{ y: 100, opacity: 0 }"
+        :while-in-view="{ y: 0, opacity: 1 }"
+        :transition="{ duration: 0.4 }"
+        :in-view-options="{ once: true }"
+        class="text-outline-2 text-6xl font-bold"
+        >History of BSE</motion.h1
+      >
     </div>
 
-    <p class="text-xl w-9/10 mb-10 font-medium">
+    <motion.p
+      :initial="{ y: 100, opacity: 0 }"
+      :while-in-view="{ y: 0, opacity: 1 }"
+      :transition="{ duration: 0.4 }"
+      :in-view-options="{ once: true }"
+      class="text-xl w-9/10 mb-10 font-medium"
+    >
       Konsistensi yang melahirkan dampak. Lihat bagaimana langkah kecil kami kini telah
       bertransformasi menjadi salah satu event teknologi tahunan yang paling dinanti di Bali.
-    </p>
+    </motion.p>
 
     <!-- shine decoration -->
     <div

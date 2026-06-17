@@ -1,3 +1,7 @@
+<script setup lang="tsx">
+import { motion } from 'motion-v'
+</script>
+
 <template>
   <section class="mb-40 pl-20 pr-20 flex flex-col items-center justify-center text-center relative">
     <!-- shine decoration -->
@@ -24,21 +28,40 @@
       <!-- star decor -->
       <div class="star-1 rotate-75 w-20 h-20 -bottom-12 -right-17 absolute z-50"></div>
 
-      <h1 class="text-outline-2 text-6xl font-bold">Sponsor</h1>
+      <motion.h1
+        :initial="{ y: 100, opacity: 0 }"
+        :while-in-view="{ y: 0, opacity: 1 }"
+        :transition="{ duration: 0.4 }"
+        :in-view-options="{ once: true }"
+        class="text-outline-2 text-6xl font-bold"
+        >Sponsor</motion.h1
+      >
     </div>
 
-    <p class="font-medium text-xl">
+    <motion.p
+      :initial="{ y: 100, opacity: 0 }"
+      :while-in-view="{ y: 0, opacity: 1 }"
+      :transition="{ duration: 0.4 }"
+      :in-view-options="{ once: true }"
+      class="font-medium text-xl"
+    >
       Figma ipsum component variant main layer. Inspect clip opacity effect style invite export.
       Polygon pixel team layout hand inspect team.
-    </p>
+    </motion.p>
 
-    <div class="sponsor-box w-full h-200 relative">
+    <motion.div
+      :initial="{ y: 100, opacity: 0 }"
+      :while-in-view="{ y: 0, opacity: 1 }"
+      :transition="{ duration: 0.4 }"
+      :in-view-options="{ once: true }"
+      class="sponsor-box w-full h-200 relative"
+    >
       <!-- star decor -->
       <div class="star-1 rotate-92 w-20 h-20 top-17 left-78 absolute z-50"></div>
       <div class="star-1 rotate-78 w-20 h-20 bottom-35 -right-6 absolute z-50"></div>
 
       <!-- rocket decor -->
       <div class="rocket rotate-90 w-45 h-45 bottom-30 -left-20 absolute z-50"></div>
-    </div>
+    </motion.div>
   </section>
 </template>

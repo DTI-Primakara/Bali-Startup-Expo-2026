@@ -1,5 +1,4 @@
 <script setup lang="tsx">
-import { motion } from 'motion-v'
 import { ref } from 'vue'
 
 const EVENT_DATE = new Date('2026-07-09T00:00:00')
@@ -105,15 +104,7 @@ setInterval(() => {
       <div class="rocket w-25 h-25 rotate-90 -bottom-10 -left-30 absolute -z-50"></div>
       <div class="rocket w-45 h-45 -bottom-65 -right-40 absolute -z-50"></div>
 
-      <motion.h1
-        :initial="{ y: 100, opacity: 0 }"
-        :while-in-view="{ y: 0, opacity: 1 }"
-        :transition="{ duration: 0.4 }"
-        :in-view-options="{ once: true }"
-        class="text-[#FEFCFB] font-bold text-8xl text-outline-1"
-      >
-        Bali Start-Up Expo
-      </motion.h1>
+      <h1 class="text-[#FEFCFB] font-bold text-8xl text-outline-1">Bali Start-Up Expo</h1>
     </div>
 
     <h3 class="font-medium text-xl max-w-7/10">

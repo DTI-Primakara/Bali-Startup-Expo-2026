@@ -1,4 +1,5 @@
 <script setup lang="tsx">
+import { motion } from 'motion-v'
 const props = defineProps({
   title: String,
   description: String,
@@ -9,7 +10,11 @@ const props = defineProps({
 </script>
 
 <template>
-  <div
+  <motion.div
+    :initial="{ y: 100, opacity: 0 }"
+    :while-in-view="{ y: 0, opacity: 1 }"
+    :transition="{ duration: 0.4 }"
+    :in-view-options="{ once: true }"
     class="w-full h-full gap-2 backdrop-blur-sm rounded-[10px] p-10 pb-5 flex flex-col justify-center bg-white/15 shadow-[0_0_4px_2px_rgba(255,255,255,0.4)]"
   >
     <p class="font-semibold text-2xl absolute top-4 right-4 underline underline-offset-8">
@@ -32,5 +37,5 @@ const props = defineProps({
     <a href="test" class="font-semibold text-base underline underline-offset-5"
       >Book your seat now</a
     >
-  </div>
+  </motion.div>
 </template>

@@ -1,3 +1,7 @@
+<script setup lang="tsx">
+import { motion } from 'motion-v'
+</script>
+
 <template>
   <section
     id="gallery"
@@ -30,13 +34,26 @@
       <!-- star decor -->
       <div class="star-1 rotate-75 w-20 h-20 -bottom-12 -right-17 absolute z-50"></div>
 
-      <h1 class="text-outline-2 text-6xl font-bold">Gallery</h1>
+      <motion.h1
+        :initial="{ y: 100, opacity: 0 }"
+        :while-in-view="{ y: 0, opacity: 1 }"
+        :transition="{ duration: 0.4 }"
+        :in-view-options="{ once: true }"
+        class="text-outline-2 text-6xl font-bold"
+        >Gallery</motion.h1
+      >
     </div>
 
-    <p class="mb-12 font-medium text-xl">
+    <motion.p
+      :initial="{ y: 100, opacity: 0 }"
+      :while-in-view="{ y: 0, opacity: 1 }"
+      :transition="{ duration: 0.4 }"
+      :in-view-options="{ once: true }"
+      class="mb-12 font-medium text-xl"
+    >
       Intip kembali keseruan, antusiasme, dan momen-momen inspiratif yang terekam sepanjang gelaran
       Bali Startup Expo.
-    </p>
+    </motion.p>
 
     <div class="grid grid-cols-21 gap-2">
       <!-- first row -->
