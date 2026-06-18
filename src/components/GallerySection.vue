@@ -5,7 +5,7 @@ import { motion } from 'motion-v'
 <template>
   <section
     id="gallery"
-    class="scroll-m-45 mb-40 pl-20 pr-20 flex flex-col items-center justify-center text-center relative"
+    class="scroll-m-45 mb-40 md:pl-20 md:pr-20 pl-10 pr-10 flex flex-col items-center justify-center text-center relative"
   >
     <!-- shine decoration -->
     <div
@@ -39,7 +39,7 @@ import { motion } from 'motion-v'
         :while-in-view="{ y: 0, opacity: 1 }"
         :transition="{ duration: 0.4 }"
         :in-view-options="{ once: true }"
-        class="text-outline-2 text-6xl font-bold"
+        class="text-outline-2 md:text-6xl text-4xl font-bold"
         >Gallery</motion.h1
       >
     </div>
@@ -49,7 +49,7 @@ import { motion } from 'motion-v'
       :while-in-view="{ y: 0, opacity: 1 }"
       :transition="{ duration: 0.4 }"
       :in-view-options="{ once: true }"
-      class="mb-12 font-medium text-xl"
+      class="mb-12 font-medium md:text-xl text-base"
     >
       Intip kembali keseruan, antusiasme, dan momen-momen inspiratif yang terekam sepanjang gelaran
       Bali Startup Expo.

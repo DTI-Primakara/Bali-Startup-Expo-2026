@@ -15,6 +15,6 @@ export default defineConfig({
     },
   },
   server: {
-    allowedHosts: ['pressed-financing-very-short.trycloudflare.com'],
+    allowedHosts: [],
   },
 })

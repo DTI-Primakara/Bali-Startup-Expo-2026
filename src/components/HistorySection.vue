@@ -6,7 +6,7 @@ import { motion } from 'motion-v'
 <template>
   <section
     id="history"
-    class="w-full scroll-m-20 gap-8 mb-30 pt-20 flex flex-col text-center items-center relative pl-20 pr-20"
+    class="w-full scroll-m-20 gap-8 mb-30 pt-20 flex flex-col text-center items-center relative md:pl-20 pl-10 md:pr-20 pr-10"
   >
     <div class="relative">
       <!-- border decoration -->
@@ -29,7 +29,7 @@ import { motion } from 'motion-v'
         :while-in-view="{ y: 0, opacity: 1 }"
         :transition="{ duration: 0.4 }"
         :in-view-options="{ once: true }"
-        class="text-outline-2 text-6xl font-bold"
+        class="text-outline-2 md:text-6xl text-4xl font-bold"
         >History of BSE</motion.h1
       >
     </div>
@@ -39,7 +39,7 @@ import { motion } from 'motion-v'
       :while-in-view="{ y: 0, opacity: 1 }"
       :transition="{ duration: 0.4 }"
       :in-view-options="{ once: true }"
-      class="text-xl w-9/10 mb-10 font-medium"
+      class="md:text-xl text-base w-9/10 mb-10 font-medium"
     >
       Konsistensi yang melahirkan dampak. Lihat bagaimana langkah kecil kami kini telah
       bertransformasi menjadi salah satu event teknologi tahunan yang paling dinanti di Bali.

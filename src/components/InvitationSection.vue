@@ -3,10 +3,12 @@ import { motion } from 'motion-v'
 </script>
 
 <template>
-  <section class="h-screen gap-6 flex flex-col items-center justify-center text-center relative">
+  <section
+    class="h-screen md:pl-20 md:pr-20 pl-10 pr-10 gap-6 flex flex-col items-center justify-center text-center relative"
+  >
     <!-- gradient circle -->
     <div
-      class="absolute w-100 h-100 mb-100 rounded-full opacity-50 bg-[radial-gradient(circle,#007FFF,#007FFF)] blur-[150px] -z-100"
+      class="absolute w-100 h-100 md:mb-100 mb-0 rounded-full opacity-50 bg-[radial-gradient(circle,#007FFF,#007FFF)] blur-[150px] -z-100"
     ></div>
 
     <!-- star decor -->
@@ -30,7 +32,7 @@ import { motion } from 'motion-v'
       :while-in-view="{ y: 0, opacity: 1 }"
       :transition="{ duration: 0.4 }"
       :in-view-options="{ once: true }"
-      class="font-semibold text-5xl"
+      class="font-semibold md:text-5xl text-3xl"
     >
       Ready To Launch <br />
       Your Future?
@@ -40,7 +42,7 @@ import { motion } from 'motion-v'
       :while-in-view="{ y: 0, opacity: 1 }"
       :transition="{ duration: 0.4 }"
       :in-view-options="{ once: true }"
-      class="mb-8 font-medium text-md text-gray"
+      class="mb-8 font-medium md:text-base text-sm text-gray"
     >
       Join Bali Startup Expo 2026 and Become Part of Bali’s Innovation
     </motion.p>

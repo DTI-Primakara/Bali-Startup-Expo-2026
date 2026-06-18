@@ -36,7 +36,7 @@ const MEDIA_PARTNER_COUNT = 15
         :while-in-view="{ y: 0, opacity: 1 }"
         :transition="{ duration: 0.4 }"
         :in-view-options="{ once: true }"
-        class="text-outline-2 text-6xl font-bold"
+        class="text-outline-2 md:text-6xl text-4xl font-bold"
         >Media Partner</motion.h1
       >
     </div>
@@ -46,24 +46,26 @@ const MEDIA_PARTNER_COUNT = 15
       :while-in-view="{ y: 0, opacity: 1 }"
       :transition="{ duration: 0.4 }"
       :in-view-options="{ once: true }"
-      class="mb-10 pl-30 pr-40 text-xl font-medium"
+      class="mb-10 md:text-xl md:pl-20 md:pr-20 pl-10 pr-10 text-base font-medium"
     >
       Figma ipsum component variant main layer. Inspect clip opacity effect style invite export.
       Polygon pixel team layout hand inspect team.
     </motion.p>
 
-    <div class="w-max flex self-start infinite-marquee">
-      <MediaPartnerBox
-        v-for="index in MEDIA_PARTNER_COUNT"
-        :key="`media_partner_${index}`"
-        :index="index"
-      />
+    <div class="w-full overflow-hidden">
+      <div class="w-max flex self-start infinite-marquee">
+        <MediaPartnerBox
+          v-for="index in MEDIA_PARTNER_COUNT"
+          :key="`media_partner_${index}`"
+          :index="index"
+        />
 
-      <MediaPartnerBox
-        v-for="index in MEDIA_PARTNER_COUNT"
-        :key="`media_partner_${index}`"
-        :index="index"
-      />
+        <MediaPartnerBox
+          v-for="index in MEDIA_PARTNER_COUNT"
+          :key="`media_partner_${index}`"
+          :index="index"
+        />
+      </div>
     </div>
   </section>
 </template>

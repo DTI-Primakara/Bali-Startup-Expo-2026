@@ -18,7 +18,7 @@ import { motion } from 'motion-v'
     <div class="moon w-20 h-20 -bottom-10 right-165 absolute -z-50"></div>
 
     <!-- wrapper -->
-    <div class="grid grid-cols-[6fr_7fr] w-9/10 gap-10">
+    <div class="md:grid grid-cols-[6fr_7fr] flex flex-col-reverse w-9/10 gap-10">
       <motion.div
         :initial="{ y: 100, opacity: 0 }"
         :while-in-view="{ y: 0, opacity: 1 }"
@@ -50,15 +50,15 @@ import { motion } from 'motion-v'
         :while-in-view="{ y: 0, opacity: 1 }"
         :transition="{ duration: 0.4 }"
         :in-view-options="{ once: true }"
-        class="flex flex-col gap-4 justify-center"
+        class="flex flex-col gap-4 justify-center md:items-start md:text-left text-center items-center"
       >
         <p class="text-xl font-bold">About Us</p>
-        <h1 class="text-outline-2 text-6xl font-bold">
+        <h1 class="text-outline-2 md:text-6xl text-4xl font-bold">
           What is <br />
           Bali Start-Up Expo?
         </h1>
 
-        <p class="text-gray text-xl font-medium">
+        <p class="text-gray md:text-xl text-base font-medium">
           Bali Startup Expo adalah puncak inovasi technopreneur Primakara. Wadah kolaborasi yang
           menghubungkan puluhan startup digital pilihan dengan masyarakat dan dunia industri.
         </p>

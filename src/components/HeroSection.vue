@@ -58,7 +58,7 @@ setInterval(() => {
 <template>
   <section
     id="hero"
-    class="h-[130vh] w-full gap-4 pt-40 mb-15 items-center justify-center flex flex-col text-center relative isolate"
+    class="w-full gap-4 pl-10 pr-10 md:pl-20 md:pr-20 md:pt-50 pt-40 mb-40 items-center justify-center flex flex-col text-center relative isolate"
   >
     <!-- star decor -->
     <div class="star-2 opacity-60 bottom-0 left-10 absolute w-45 h-45 -z-50"></div>
@@ -87,7 +87,11 @@ setInterval(() => {
         class="h-6 w-20 border-white border-r-2 border-b-2 absolute bottom-0 -right-1.5 rounded-br-sm"
       ></div>
 
-      <h2 class="text-4xl font-semibold">Ignite the Courage, Empower the Future</h2>
+      <!-- star decoration -->
+      <div class="star-1 rotate-15 w-45 h-45 -top-22 -left-32 absolute -z-50"></div>
+      <div class="star-1 opacity-60 rotate-6 w-20 h-20 -bottom-12 -right-18 absolute -z-50"></div>
+
+      <h2 class="md:text-4xl text-2xl font-semibold">Ignite the Courage, Empower the Future</h2>
     </div>
 
     <div class="relative flex items-center justify-center">
@@ -96,18 +100,16 @@ setInterval(() => {
         class="absolute w-25 h-25 rounded-full -bottom-70 mr-70 opacity-50 bg-[radial-gradient(circle,#022894,white)] blur-[25px] -z-50"
       ></div>
 
-      <!-- star decoration -->
-      <div class="star-1 -rotate-6 w-45 h-45 -top-35 -left-15 absolute -z-50"></div>
-      <div class="star-1 opacity-60 rotate-6 w-20 h-20 -top-15 right-0 absolute -z-50"></div>
-
       <!-- rocket decoration -->
       <div class="rocket w-25 h-25 rotate-90 -bottom-10 -left-30 absolute -z-50"></div>
       <div class="rocket w-45 h-45 -bottom-65 -right-40 absolute -z-50"></div>
 
-      <h1 class="text-[#FEFCFB] font-bold text-8xl text-outline-1">Bali Start-Up Expo</h1>
+      <h1 class="text-[#FEFCFB] font-bold md:text-8xl text-6xl text-outline-1">
+        Bali Start-Up Expo
+      </h1>
     </div>
 
-    <h3 class="font-medium text-xl max-w-7/10">
+    <h3 class="font-medium md:text-xl text-base">
       Panggung inovasi terbesar bagi startup lokal Bali. Temukan ide brilian, bangun koneksi
       strategis, dan jadilah bagian dari revolusi ekonomi digital masa depan.
     </h3>
@@ -132,24 +134,33 @@ setInterval(() => {
 
     </div> -->
 
+    <!-- timer -->
     <div
-      class="w-7/10 backdrop-blur-md rounded-[10px] p-10 flex justify-between bg-white/1 shadow-[inset_0_0_2px_1px_rgba(255,255,255,0.25),inset_0_0_10px_3px_rgba(0,0,0,0.25)]"
+      class="w-7/10 gap-4 backdrop-blur-md rounded-[10px] p-10 flex md:flex-row flex-col items-center justify-between bg-white/1 shadow-[inset_0_0_2px_1px_rgba(255,255,255,0.25),inset_0_0_10px_3px_rgba(0,0,0,0.25)]"
     >
-      <div class="w-1/4 bg-[radial-gradient(circle,rgba(4,102,200,0.5),transparent,transparent)]">
-        <p class="text-6xl medium">{{ daysRef }}</p>
-        <p class="text-3xl medium">Days</p>
+      <div
+        class="md:w-1/4 bg-[radial-gradient(circle,rgba(4,102,200,0.5),transparent,transparent)]"
+      >
+        <p class="md:text-6xl text-5xl medium">{{ daysRef }}</p>
+        <p class="md:text-3xl text-2xl medium">Days</p>
       </div>
-      <div class="w-1/4 bg-[radial-gradient(circle,rgba(4,102,200,0.5),transparent,transparent)]">
-        <p class="text-6xl medium">{{ hoursRef }}</p>
-        <p class="text-3xl medium">Hours</p>
+      <div
+        class="md:w-1/4 bg-[radial-gradient(circle,rgba(4,102,200,0.5),transparent,transparent)]"
+      >
+        <p class="md:text-6xl text-5xl medium">{{ hoursRef }}</p>
+        <p class="md:text-3xl text-2xl medium">Hours</p>
       </div>
-      <div class="w-1/4 bg-[radial-gradient(circle,rgba(4,102,200,0.5),transparent,transparent)]">
-        <p class="text-6xl medium">{{ minutesRef }}</p>
-        <p class="text-3xl medium">Minutes</p>
+      <div
+        class="md:w-1/4 bg-[radial-gradient(circle,rgba(4,102,200,0.5),transparent,transparent)]"
+      >
+        <p class="md:text-6xl text-5xl medium">{{ minutesRef }}</p>
+        <p class="md:text-3xl text-2xl medium">Minutes</p>
       </div>
-      <div class="w-1/4 bg-[radial-gradient(circle,rgba(4,102,200,0.5),transparent,transparent)]">
-        <p class="text-6xl medium">{{ secondsRef }}</p>
-        <p class="text-3xl medium">Seconds</p>
+      <div
+        class="md:w-1/4 bg-[radial-gradient(circle,rgba(4,102,200,0.5),transparent,transparent)]"
+      >
+        <p class="md:text-6xl text-5xl medium">{{ secondsRef }}</p>
+        <p class="md:text-3xl text-2xl medium">Seconds</p>
       </div>
     </div>
   </section>

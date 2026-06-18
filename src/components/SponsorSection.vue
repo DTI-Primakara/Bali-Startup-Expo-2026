@@ -3,7 +3,9 @@ import { motion } from 'motion-v'
 </script>
 
 <template>
-  <section class="mb-40 pl-20 pr-20 flex flex-col items-center justify-center text-center relative">
+  <section
+    class="mb-40 md:pl-20 md:pr-20 pl-10 pr-10 flex flex-col items-center justify-center text-center relative"
+  >
     <!-- shine decoration -->
     <div
       class="absolute w-150 h-150 rounded-full -top-30 -left-70 opacity-50 bg-[radial-gradient(circle,#022894,white)] blur-[200px] -z-100"
@@ -33,7 +35,7 @@ import { motion } from 'motion-v'
         :while-in-view="{ y: 0, opacity: 1 }"
         :transition="{ duration: 0.4 }"
         :in-view-options="{ once: true }"
-        class="text-outline-2 text-6xl font-bold"
+        class="text-outline-2 md:text-6xl text-4xl font-bold"
         >Sponsor</motion.h1
       >
     </div>
@@ -43,7 +45,7 @@ import { motion } from 'motion-v'
       :while-in-view="{ y: 0, opacity: 1 }"
       :transition="{ duration: 0.4 }"
       :in-view-options="{ once: true }"
-      class="font-medium text-xl"
+      class="font-medium md:text-xl text-base"
     >
       Figma ipsum component variant main layer. Inspect clip opacity effect style invite export.
       Polygon pixel team layout hand inspect team.
@@ -54,7 +56,7 @@ import { motion } from 'motion-v'
       :while-in-view="{ y: 0, opacity: 1 }"
       :transition="{ duration: 0.4 }"
       :in-view-options="{ once: true }"
-      class="sponsor-box w-full h-200 relative"
+      class="w-full md:h-200 h-100 relative backdrop-blur-sm md:rounded-none rounded-[10px] md:bg-transparent bg-white/15 md:shadow-none shadow-[0_0_4px_2px_rgba(255,255,255,0.4)]"
     >
       <!-- star decor -->
       <div class="star-1 rotate-92 w-20 h-20 top-17 left-78 absolute z-50"></div>
@@ -62,6 +64,9 @@ import { motion } from 'motion-v'
 
       <!-- rocket decor -->
       <div class="rocket rotate-90 w-45 h-45 bottom-30 -left-20 absolute z-50"></div>
+
+      <!-- sponsor box -->
+      <div class="sponsor-box absolute w-full h-full md:block hidden"></div>
     </motion.div>
   </section>
 </template>
