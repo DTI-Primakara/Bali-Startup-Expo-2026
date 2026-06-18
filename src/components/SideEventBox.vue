@@ -13,7 +13,11 @@ const props = defineProps({
     :while-in-view="{ y: 0, opacity: 1 }"
     :transition="{ duration: 0.4 }"
     :in-view-options="{ once: true }"
-    :class="`w-full gap-2 backdrop-blur-sm rounded-[10px] md:p-10 p-7 flex flex-col justify-center bg-white/15 shadow-[0_0_4px_2px_rgba(255,255,255,0.4)] duration-500 ${currentIndex != index && 'translate-y-6 brightness-80'}`"
+    class="w-full gap-2 backdrop-blur-sm rounded-[10px] md:p-10 p-7 flex flex-col justify-center bg-white/15 shadow-[0_0_4px_2px_rgba(255,255,255,0.4)] duration-500"
+    :style="{
+      filter: currentIndex != index ? `brightness(80%)` : '',
+      transform: currentIndex != index ? `translateY(24px)` : '',
+    }"
   >
     <div class="gap-10 md:grid grid-cols-2 flex flex-col">
       <div class="w-full md:h-90 h-40 bg-red-500"></div>

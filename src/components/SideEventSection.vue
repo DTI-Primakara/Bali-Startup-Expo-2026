@@ -60,7 +60,8 @@ const handleCarousel = (direction: 'left' | 'right') => {
 
     <div class="flex w-[300%] self-start items-center">
       <div
-        :class="`flex items-center justify-center self-start w-[300%] gap-8 -translate-x-${carouselIndex}/3 relative duration-750`"
+        class="flex items-center justify-center self-start w-full gap-8 relative duration-750"
+        :style="{ transform: `translateX(-${(carouselIndex / 3) * 100}%)` }"
       >
         <side-event-box
           v-for="index in CAROUSEL_COUNT"
@@ -91,7 +92,8 @@ const handleCarousel = (direction: 'left' | 'right') => {
 
       <!-- formula: (width+gap) * index -->
       <div
-        :class="`translate-x-${(5 + 2) * carouselIndex} h-5 w-5 rounded-full bg-white/30 shadow-[inset_0_0_4px_2px_rgba(255,255,255,0.4)] backdrop-blur-sm absolute duration-750`"
+        class="translate-x-${(5 + 2) * carouselIndex} h-5 w-5 rounded-full bg-white/30 shadow-[inset_0_0_4px_2px_rgba(255,255,255,0.4)] backdrop-blur-sm absolute duration-750"
+        :style="{ transform: `translateX(${(5 + 2) * carouselIndex * 4}px)` }"
       ></div>
     </div>
   </section>
