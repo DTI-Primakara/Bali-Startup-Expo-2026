@@ -45,7 +45,7 @@ import ActivityBox from './ActivityBox.vue'
       </motion.p>
     </div>
 
-    <div class="md:grid flex flex-col gap-10 grid-cols-2 grid-rows-2">
+    <div class="md:grid flex flex-col gap-10 grid-cols-2 justify-center items-center">
       <!-- <div
         class="w-full h-full gap-2 backdrop-blur-sm rounded-[10px] p-10 flex flex-col justify-center bg-white/15 shadow-[0_0_4px_2px_rgba(255,255,255,0.4)]"
       >

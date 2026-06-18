@@ -123,11 +123,13 @@ setInterval(() => {
     <!-- <p class="">Lihat Selengkapnya</p> -->
     <!-- </button> -->
 
-    <button
-      class="mb-8 p-3 border-white border rounded-4xl cursor-pointer duration-200 hover:bg-white hover:text-[#031446]"
+    <a
+      href="https://maps.app.goo.gl/QFua9m7JCx8yQpxYA"
+      target="_blank"
+      class="mb-8 p-3 border-white border rounded-4xl duration-200 hover:bg-white hover:text-[#031446]"
     >
       <p class="text-lg font-semibold">📍Discovery Mall Bali</p>
-    </button>
+    </a>
 
     <!-- title & motto
     <div class="h-full w-full items-center justify-center flex flex-col text-center justify-self-center gap-4">

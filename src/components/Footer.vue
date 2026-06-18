@@ -20,14 +20,25 @@
         class="text-[#031446] md:text-3xl text-xl font-medium md:gap-3 flex flex-col md:items-start items-center"
       >
         <p class="font-bold">Media Sosial</p>
-        <p>@balistartupexpo</p>
-        <p>bali.startup.expo</p>
-        <p>Bali Startup Expo</p>
+        <div class="flex items-center gap-1">
+          <img class="w-max h-max" src="../assets/images/instagram.png" />
+          <a target="_blank" href="https://instagram.com">@balistartupexpo</a>
+        </div>
+        <div class="flex items-center gap-1">
+          <img class="w-max h-max" src="../assets/images/tiktok.png" />
+          <a target="_blank" href="https://tiktok.com">bali.startup.expo</a>
+        </div>
+        <div class="flex items-center gap-1">
+          <img class="w-max h-max" src="../assets/images/youtube.png" />
+          <a target="_blank" href="https://youtube.com">Bali Startup Expo</a>
+        </div>
       </div>
 
       <div class="gap-3 flex flex-col md:items-start items-center">
         <p class="font-bold text-[#031446] md:text-3xl text-xl">Organized by</p>
-        <img class="-mt-6 md:-ml-4" src="../assets/images/logo-primakara.png" />
+        <a target="_blank" href="https://primakara.ac.id"
+          ><img class="-mt-6 md:-ml-4" src="../assets/images/logo-primakara.png"
+        /></a>
       </div>
     </div>
 

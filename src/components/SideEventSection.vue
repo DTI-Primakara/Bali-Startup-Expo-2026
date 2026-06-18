@@ -1,5 +1,22 @@
 <script setup lang="tsx">
 import { motion } from 'motion-v'
+import SideEventBox from './SideEventBox.vue'
+import { ref } from 'vue'
+
+const CAROUSEL_COUNT = 3
+const carouselIndex = ref(0)
+
+const handleCarousel = (direction: 'left' | 'right') => {
+  if (direction == 'left') {
+    carouselIndex.value = (carouselIndex.value - 1) % CAROUSEL_COUNT
+
+    if (carouselIndex.value < 0) {
+      carouselIndex.value = CAROUSEL_COUNT - 1
+    }
+  } else if (direction == 'right') {
+    carouselIndex.value = (carouselIndex.value + 1) % CAROUSEL_COUNT
+  }
+}
 </script>
 
 <template>
@@ -41,52 +58,41 @@ import { motion } from 'motion-v'
       >
     </div>
 
-    <motion.div
-      :initial="{ y: 100, opacity: 0 }"
-      :while-in-view="{ y: 0, opacity: 1 }"
-      :transition="{ duration: 0.4 }"
-      :in-view-options="{ once: true }"
-      class="w-full gap-2 backdrop-blur-sm rounded-[10px] md:p-10 p-7 flex flex-col justify-center bg-white/15 shadow-[0_0_4px_2px_rgba(255,255,255,0.4)]"
-    >
-      <div class="gap-10 md:grid grid-cols-2 flex flex-col">
-        <div class="w-full md:h-90 h-40 bg-red-500"></div>
-        <div class="w-full flex flex-col justify-center md:items-start items-center">
-          <div class="mb-4 relative">
-            <!-- border decoration -->
-            <div
-              class="h-6 w-20 border-white border-l-2 border-t-2 absolute -top-0.5 -left-3 rounded-tl-sm blur-md"
-            ></div>
-            <div
-              class="h-6 w-20 border-white border-l-2 border-t-2 absolute -top-0.5 -left-3 rounded-tl-sm"
-            ></div>
-
-            <div
-              class="h-6 w-20 border-white border-r-2 border-b-2 absolute -bottom-0.5 -right-3 rounded-br-sm blur-md"
-            ></div>
-            <div
-              class="h-6 w-20 border-white border-r-2 border-b-2 absolute -bottom-0.5 -right-3 rounded-br-sm"
-            ></div>
-
-            <h2 class="text-outline-2 md:text-3xl text-xl font-bold">Special Perform</h2>
-          </div>
-
-          <p class="mb-8 font-medium md:text-xl text-base md:text-left text-center">
-            Figma ipsum component variant main layer. Inspect clip opacity effect style invite
-            export. Polygon pixel team layout hand inspect team.
-          </p>
-
-          <div class="grid-cols-[1fr_auto] gap-y-2 gap-x-2 grid items-center">
-            <img src="../assets/images/icon-calender.png" />
-            <p class="text-base font-medium">10 Juli 2026</p>
-
-            <img src="../assets/images/icon-time.png" />
-            <p class="text-base font-medium">10:00-11:00 WITA</p>
-
-            <img src="../assets/images/icon-location.png" />
-            <p class="text-base font-medium">Discovery Mall</p>
-          </div>
-        </div>
+    <div class="flex w-[300%] self-start items-center">
+      <div
+        :class="`flex items-center justify-center self-start w-[300%] gap-8 -translate-x-${carouselIndex}/3 relative duration-750`"
+      >
+        <side-event-box
+          v-for="index in CAROUSEL_COUNT"
+          :index="index - 1"
+          :current-index="carouselIndex"
+        />
       </div>
-    </motion.div>
+    </div>
+
+    <div class="mt-6 flex gap-2 relative items-center">
+      <button
+        v-on:click="handleCarousel('left')"
+        class="text-xl font-bold absolute h-10 w-10 rounded-full -left-14 z-50 bg-white/30 shadow-[inset_0_0_6px_1px_rgba(255,255,255,0.4)] backdrop-blur-sm cursor-pointer"
+      >
+        <
+      </button>
+      <button
+        v-on:click="handleCarousel('right')"
+        class="text-xl font-bold absolute h-10 w-10 rounded-full -right-14 z-50 bg-white/30 shadow-[inset_0_0_6px_1px_rgba(255,255,255,0.4)] backdrop-blur-sm cursor-pointer"
+      >
+        >
+      </button>
+
+      <div
+        v-for="index in CAROUSEL_COUNT"
+        class="h-5 w-5 rounded-full bg-white/30 shadow-[inset_0_0_4px_2px_rgba(255,255,255,0.4)] backdrop-blur-sm brightness-80"
+      ></div>
+
+      <!-- formula: (width+gap) * index -->
+      <div
+        :class="`translate-x-${(5 + 2) * carouselIndex} h-5 w-5 rounded-full bg-white/30 shadow-[inset_0_0_4px_2px_rgba(255,255,255,0.4)] backdrop-blur-sm absolute duration-750`"
+      ></div>
+    </div>
   </section>
 </template>
