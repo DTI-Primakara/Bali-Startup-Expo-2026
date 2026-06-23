@@ -20,7 +20,10 @@ const props = defineProps({
       transform: currentIndex != index ? `translateY(24px)` : '',
     }"
   >
-    <div v-if="comingSoon" class="flex flex-col items-center justify-center h-100 relative">
+    <div
+      v-if="comingSoon"
+      class="flex flex-col items-center justify-center h-100 relative text-center"
+    >
       <!-- rocket decor -->
       <div class="rocket rotate-135 w-25 h-25 bottom-8 absolute -z-50"></div>
 
