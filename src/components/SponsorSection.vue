@@ -4,7 +4,7 @@ import { motion } from 'motion-v'
 
 <template>
   <section
-    class="mb-40 md:pl-20 md:pr-20 pl-10 pr-10 flex flex-col items-center justify-center text-center relative"
+    class="md:mb-40 md:pl-20 md:pr-20 pl-5 pr-5 flex flex-col items-center justify-center text-center relative"
   >
     <!-- shine decoration -->
     <div
@@ -56,17 +56,19 @@ import { motion } from 'motion-v'
       :while-in-view="{ y: 0, opacity: 1 }"
       :transition="{ duration: 0.4 }"
       :in-view-options="{ once: true }"
-      class="w-full md:h-200 h-100 relative backdrop-blur-sm md:rounded-none rounded-[10px] md:bg-transparent bg-white/15 md:shadow-none shadow-[0_0_4px_2px_rgba(255,255,255,0.4)]"
+      class="w-full md:h-200 h-100 relative"
     >
       <!-- star decor -->
       <div class="star-1 rotate-92 w-20 h-20 top-17 left-78 absolute z-50"></div>
-      <div class="star-1 rotate-78 w-20 h-20 bottom-35 -right-6 absolute z-50"></div>
+      <div class="star-1 rotate-78 w-20 h-20 bottom-35 md:-right-6 -right-12 absolute z-50"></div>
 
       <!-- rocket decor -->
-      <div class="rocket rotate-90 w-45 h-45 bottom-30 -left-20 absolute z-50"></div>
+      <div
+        class="rocket rotate-90 md:w-45 md:h-45 w-20 h-20 bottom-25 md:-left-20 -left-15 absolute z-50"
+      ></div>
 
       <!-- sponsor box -->
-      <div class="sponsor-box absolute w-full h-full md:block hidden"></div>
+      <div class="sponsor-box absolute w-full h-full"></div>
     </motion.div>
   </section>
 </template>

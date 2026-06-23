@@ -48,8 +48,8 @@ const MEDIA_PARTNER_COUNT = 15
       :in-view-options="{ once: true }"
       class="mb-10 md:text-xl md:pl-20 md:pr-20 pl-10 pr-10 text-base font-medium"
     >
-      Figma ipsum component variant main layer. Inspect clip opacity effect style invite export.
-      Polygon pixel team layout hand inspect team.
+      Bersama para mitra media, kami menyebarluaskan inspirasi dan solusi digital dari panggung Bali
+      Startup Expo 2026 ke seluruh penjuru.
     </motion.p>
 
     <div class="w-full overflow-hidden">

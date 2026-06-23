@@ -40,8 +40,8 @@ import ActivityBox from './ActivityBox.vue'
         :in-view-options="{ once: true }"
         class="md:text-xl text-base max-w-120 font-medium md:text-right text-center"
       >
-        Figma ipsum component variant main layer. Inspect clip opacity Dolor sit Amet Lorem ipsum
-        variant player sit Inspect.
+        Jangan lewatkan kesempatan emas belajar langsung dari para praktisi dan founder sukses
+        lokal. Temukan strategi jitu membangun bisnis dari nol hingga siap bersaing secara global.
       </motion.p>
     </div>
 
@@ -66,42 +66,34 @@ import ActivityBox from './ActivityBox.vue'
         </div> -->
       <ActivityBox
         title="Talkshow Day 1"
-        description="Discover groundbreaking ventures across 100+ booths from the region’s brightest founders"
-        topic="Validation & Market Fit"
-        time="09:00 - 12:00 WITA"
-        speaker="I Wayan Indra Adhi Suputra, S.Kom."
-      />
-
-      <ActivityBox
-        title="Talkshow Day 2"
-        description="Discover groundbreaking ventures across 100+ booths from the region’s brightest founders"
-        topic="Validation & Market Fit"
-        time="09:00 - 12:00 WITA"
-        speaker="Putu Surya Sudarmadi, S.Kom."
+        description="Diskusi interaktif mengenai tantangan nyata dan masa depan startup di Pulau Dewata"
+        topic="Startup di Pulau Dewata: Antara Peluang Global dan Tantangan Nyata"
+        time="19:05 - 19:50 WITA"
+        speaker="Putu Surya Sudarmadi (Owner GuestPro) & I Wayan Indra Adhi Suputra, S.Kom. (CEO Djoin)"
       />
 
       <ActivityBox
         title="Sharing Session Day 2"
-        description="Discover groundbreaking ventures across 100+ booths from the region’s brightest founders"
-        topic="Validation & Market Fit"
-        time="09:00 - 12:00 WITA"
-        speaker="Agus Yusida, S.Kom."
+        description="Belajar strategi digital branding untuk mengubah cerita produk menjadi konversi penjualan"
+        topic="Jual Cerita, Bukan Cuma Produk: Strategi Digital Branding untuk Bisnis Kreatif"
+        time="15:40 - 16:40 WITA"
+        speaker="Putu Evananda (Wasana Bali)"
       />
 
       <ActivityBox
         title="Sharing Session Day 2"
-        description="Discover groundbreaking ventures across 100+ booths from the region’s brightest founders"
-        topic="Validation & Market Fit"
-        time="09:00 - 12:00 WITA"
-        speaker="Agus Yusida, S.Kom."
+        description="Strategi taktis memasarkan jasa IT secara tepat sasaran ke pelaku bisnis lokal"
+        topic="Jual Solusi, Bukan Sekadar Fitur: Strategi Branding Jasa IT untuk Menyasar Market Lokal"
+        time="16:10 - 16:40 WITA"
+        speaker="Merta Yoga (Atrem Project)"
       />
 
       <ActivityBox
-        title="Sharing Session Day 2"
-        description="Discover groundbreaking ventures across 100+ booths from the region’s brightest founders"
-        topic="Validation & Market Fit"
-        time="09:00 - 12:00 WITA"
-        speaker="Putu Evan"
+        title="Light Talk Day 2"
+        description="Mengulik realita di balik sustainable business yang membawa dampak nyata bagi lingkungan"
+        topic="Profit with Purpose: Realita Menjalankan Bisnis yang Berdampak pada Lingkungan"
+        time="17:10 - 17:50 WITA"
+        speaker="I Made Wisakananda Pradipta"
       />
     </div>
   </section>
