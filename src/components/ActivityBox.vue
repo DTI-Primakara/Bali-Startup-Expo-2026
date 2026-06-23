@@ -40,7 +40,10 @@ const props = defineProps({
       <p>: {{ speaker }}</p>
     </div>
 
-    <a href="test" class="font-semibold text-base underline underline-offset-5"
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSeHGbYsqReE8qbyuMw05qlQxOMBw5D3PD3mqIYmIKd8ILbh1Q/viewform?usp=header"
+      target="_blank"
+      class="font-semibold text-base underline underline-offset-5"
       >Book your seat now</a
     >
   </motion.div>

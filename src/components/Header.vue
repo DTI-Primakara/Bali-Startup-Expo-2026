@@ -13,6 +13,8 @@
       <a href="#side-event" class="md:flex hidden items-center h-full p-4"><p>Side Event</p></a>
       <a href="#gallery" class="md:flex hidden items-center h-full p-4"><p>Gallery</p></a>
       <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSeHGbYsqReE8qbyuMw05qlQxOMBw5D3PD3mqIYmIKd8ILbh1Q/viewform?usp=header"
+        target="_blank"
         class="flex items-center h-max p-3 pl-7 pr-7 rounded-3xl bg-linear-to-r bg-[#022894] to-[#031446] cursor-pointer"
         ><p>Register</p></a
       >
