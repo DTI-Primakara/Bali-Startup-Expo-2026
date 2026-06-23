@@ -22,15 +22,15 @@
         <p class="font-bold">Media Sosial</p>
         <div class="flex items-center gap-1">
           <img class="w-max h-max" src="../assets/images/instagram.png" />
-          <a target="_blank" href="https://instagram.com">@balistartupexpo</a>
+          <a target="_blank" href="https://www.instagram.com/balistartupexpo">@balistartupexpo</a>
         </div>
         <div class="flex items-center gap-1">
           <img class="w-max h-max" src="../assets/images/tiktok.png" />
-          <a target="_blank" href="https://tiktok.com">bali.startup.expo</a>
+          <a target="_blank" href="https://www.tiktok.com/@bali.startup.expo">bali.startup.expo</a>
         </div>
         <div class="flex items-center gap-1">
           <img class="w-max h-max" src="../assets/images/youtube.png" />
-          <a target="_blank" href="https://youtube.com">Bali Startup Expo</a>
+          <a target="_blank" href="https://www.youtube.com/@balistartup1098">Bali Startup Expo</a>
         </div>
       </div>
 
