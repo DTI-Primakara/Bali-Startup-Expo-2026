@@ -27,7 +27,9 @@ const props = defineProps({
       {{ description }}
     </p>
 
-    <div class="mb-3 md:text-xl text-base font-medium grid gap-3 grid-cols-[1fr_10fr] items-center">
+    <div
+      class="mb-3 md:text-xl text-base font-medium grid md:gap-3 gap-2 grid-cols-[1fr_10fr] items-center"
+    >
       <img src="../assets/images/icon-document.png" />
       <p>: {{ topic }}</p>
 

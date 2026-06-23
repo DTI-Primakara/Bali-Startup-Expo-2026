@@ -5,7 +5,7 @@ import { motion } from 'motion-v'
 <template>
   <section
     id="gallery"
-    class="scroll-m-45 mb-40 md:pl-20 md:pr-20 pl-10 pr-10 flex flex-col items-center justify-center text-center relative"
+    class="scroll-m-45 mb-40 md:pl-20 md:pr-20 pl-5 pr-5 flex flex-col items-center justify-center text-center relative"
   >
     <!-- shine decoration -->
     <div
