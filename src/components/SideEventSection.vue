@@ -67,6 +67,7 @@ const handleCarousel = (direction: 'left' | 'right') => {
           v-for="index in CAROUSEL_COUNT"
           :index="index - 1"
           :current-index="carouselIndex"
+          :coming-soon="true"
         />
       </div>
     </div>

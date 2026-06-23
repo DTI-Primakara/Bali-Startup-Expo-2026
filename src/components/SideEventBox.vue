@@ -4,6 +4,7 @@ import { motion } from 'motion-v'
 const props = defineProps({
   index: Number,
   currentIndex: Number,
+  comingSoon: Boolean,
 })
 </script>
 
@@ -19,7 +20,24 @@ const props = defineProps({
       transform: currentIndex != index ? `translateY(24px)` : '',
     }"
   >
-    <div class="gap-10 md:grid grid-cols-2 flex flex-col">
+    <div v-if="comingSoon" class="flex flex-col items-center justify-center h-100 relative">
+      <!-- rocket decor -->
+      <div class="rocket rotate-135 w-25 h-25 bottom-8 absolute -z-50"></div>
+
+      <div class="relative">
+        <!-- star decor -->
+        <div class="star-1 -rotate-112 w-40 h-40 -top-16 -right-22 absolute z-50"></div>
+        <h2 class="text-[#FEFCFB] font-bold italic md:text-8xl text-6xl text-outline-1">
+          COMING SOON
+        </h2>
+      </div>
+
+      <h3 class="text-[#FEFCFB] font-bold italic md:text-5xl text-3xl text-outline-1">
+        -- Stay Tuned --
+      </h3>
+    </div>
+
+    <div v-if="!comingSoon" class="gap-10 md:grid grid-cols-2 flex flex-col">
       <div class="w-full md:h-90 h-40 bg-red-500"></div>
       <div class="w-full flex flex-col justify-center md:items-start items-center">
         <div class="mb-4 relative">
