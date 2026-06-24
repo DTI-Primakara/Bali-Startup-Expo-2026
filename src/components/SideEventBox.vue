@@ -30,12 +30,12 @@ const props = defineProps({
       <div class="relative">
         <!-- star decor -->
         <div class="star-1 -rotate-112 w-40 h-40 -top-16 -right-22 absolute z-50"></div>
-        <h2 class="text-[#FEFCFB] font-bold italic md:text-8xl text-6xl text-outline-1">
+        <h2 class="text-[#FEFCFB] font-bold italic md:text-8xl text-5xl text-outline-1">
           COMING SOON
         </h2>
       </div>
 
-      <h3 class="text-[#FEFCFB] font-bold italic md:text-5xl text-3xl text-outline-1">
+      <h3 class="text-[#FEFCFB] font-bold italic md:text-5xl text-2xl text-outline-1">
         -- Stay Tuned --
       </h3>
     </div>

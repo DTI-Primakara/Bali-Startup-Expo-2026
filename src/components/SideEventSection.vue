@@ -22,7 +22,7 @@ const handleCarousel = (direction: 'left' | 'right') => {
 <template>
   <section
     id="side-event"
-    class="scroll-m-45 mb-50 md:pl-20 md:pr-20 pl-10 pr-10 flex flex-col items-center relative"
+    class="scroll-m-45 mb-50 md:pl-20 md:pr-20 pl-5 pr-5 flex flex-col items-center relative"
   >
     <!-- shine decoration -->
     <div
@@ -60,7 +60,7 @@ const handleCarousel = (direction: 'left' | 'right') => {
 
     <div class="flex w-[300%] self-start items-center">
       <div
-        class="flex items-center justify-center self-start w-full gap-8 relative duration-750"
+        class="grid grid-cols-3 pl-4 pr-4 items-center justify-center self-start w-full gap-8 relative duration-750"
         :style="{ transform: `translateX(-${(carouselIndex / 3) * 100}%)` }"
       >
         <side-event-box
