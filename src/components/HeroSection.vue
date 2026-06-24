@@ -22,7 +22,7 @@ const updateDateDiff = () => {
     hours = 0,
     days = 0
 
-  if (seconds <= 0) {
+  if (seconds < 0) {
     return
   }
 

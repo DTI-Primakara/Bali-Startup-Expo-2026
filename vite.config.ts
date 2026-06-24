@@ -15,6 +15,6 @@ export default defineConfig({
     },
   },
   server: {
-    allowedHosts: [],
+    allowedHosts: ['aircraft-interfaces-hang-lace.trycloudflare.com'],
   },
 })
