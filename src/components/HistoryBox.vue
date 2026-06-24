@@ -15,7 +15,7 @@ const props = defineProps({
     :while-in-view="{ y: 0, opacity: 1 }"
     :transition="{ duration: 0.4 }"
     :in-view-options="{ once: true }"
-    class="self-end relative mb-20 md:w-190 w-full md:h-120 p-10 md:pr-10 md:pl-15 md:pt-25 gap-4 md:items-end items-center flex flex-col md:backdrop-blur-none backdrop-blur-sm md:rounded-none rounded-[10px] md:bg-transparent bg-white/15 md:shadow-none shadow-[0_0_4px_2px_rgba(255,255,255,0.4)]"
+    class="self-end relative mb-20 md:w-190 w-full md:h-120 p-10 md:pr-10 md:pl-10 md:pt-22 gap-4 md:items-end items-center flex flex-col md:backdrop-blur-none backdrop-blur-sm md:rounded-none rounded-[10px] md:bg-transparent bg-white/15 md:shadow-none shadow-[0_0_4px_2px_rgba(255,255,255,0.4)]"
     v-if="mirrored"
   >
     <!-- box shape -->
@@ -33,7 +33,7 @@ const props = defineProps({
     :while-in-view="{ y: 0, opacity: 1 }"
     :transition="{ duration: 0.4 }"
     :in-view-options="{ once: true }"
-    class="relative mb-20 md:w-190 w-full md:h-120 p-10 md:pl-10 md:pr-15 md:pt-25 gap-4 flex md:items-start flex-col self-start md:backdrop-blur-none backdrop-blur-sm md:rounded-none rounded-[10px] md:bg-transparent bg-white/15 md:shadow-none shadow-[0_0_4px_2px_rgba(255,255,255,0.4)]"
+    class="relative mb-20 md:w-190 w-full md:h-120 p-10 md:pl-10 md:pr-10 md:pt-22 gap-4 flex md:items-start flex-col self-start md:backdrop-blur-none backdrop-blur-sm md:rounded-none rounded-[10px] md:bg-transparent bg-white/15 md:shadow-none shadow-[0_0_4px_2px_rgba(255,255,255,0.4)]"
     v-if="!mirrored"
   >
     <!-- box shape -->

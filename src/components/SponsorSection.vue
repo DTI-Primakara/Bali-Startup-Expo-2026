@@ -64,11 +64,11 @@ import { motion } from 'motion-v'
 
       <!-- rocket decor -->
       <div
-        class="rocket rotate-90 md:w-45 md:h-45 w-20 h-20 bottom-25 md:-left-20 -left-15 absolute z-50"
+        class="rocket rotate-90 md:w-45 md:h-45 w-20 h-20 bottom-10 md:-left-20 -left-7 absolute z-50"
       ></div>
 
       <!-- sponsor box -->
-      <div class="sponsor-box absolute w-full h-full"></div>
+      <div class="sponsor-box absolute w-full md:h-200 h-80"></div>
     </motion.div>
   </section>
 </template>

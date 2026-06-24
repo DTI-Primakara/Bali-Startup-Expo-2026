@@ -30,7 +30,9 @@
         </div>
         <div class="flex items-center gap-1">
           <img class="w-max h-max" src="../assets/images/youtube.png" />
-          <a target="_blank" href="https://www.youtube.com/@balistartup1098">Bali Startup Expo</a>
+          <a target="_blank" href="https://www.youtube.com/@balistartupexpo9475"
+            >Bali Startup Expo</a
+          >
         </div>
       </div>
 
