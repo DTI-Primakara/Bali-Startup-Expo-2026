@@ -47,8 +47,7 @@ import { motion } from 'motion-v'
       :in-view-options="{ once: true }"
       class="font-medium md:text-xl text-base"
     >
-      Figma ipsum component variant main layer. Inspect clip opacity effect style invite export.
-      Polygon pixel team layout hand inspect team.
+      Acara ini terselenggara berkat dukungan luar biasa dari para mitra dan sponsor resmi kami.
     </motion.p>
 
     <motion.div

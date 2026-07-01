@@ -39,10 +39,10 @@ import { motion } from 'motion-v'
           </p>
         </div>
 
-        <img class="self-end justify-self-end" src="../assets/images/about-1.png" />
-        <img src="../assets/images/about-2.png" />
-        <img class="justify-self-end" src="../assets/images/about-3.png" />
-        <img src="../assets/images/about-4.png" />
+        <img class="self-end justify-self-end" src="/images/about-1.png" />
+        <img src="/images/about-2.png" />
+        <img class="justify-self-end" src="/images/about-3.png" />
+        <img src="/images/about-4.png" />
       </motion.div>
 
       <motion.div

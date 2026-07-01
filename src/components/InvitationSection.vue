@@ -47,11 +47,13 @@ import { motion } from 'motion-v'
       Join Bali Startup Expo 2026 and Become Part of Bali’s Innovation
     </motion.p>
 
-    <button
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSeHGbYsqReE8qbyuMw05qlQxOMBw5D3PD3mqIYmIKd8ILbh1Q/viewform?usp=header"
+      target="_blank"
       class="rounded-[50px] p-8 pl-12 pr-12 font-semibold text-xl bg-linear-to-r bg-[#0466C8] to-[#033E79] flex items-center gap-4 cursor-pointer"
     >
       Register Now
-      <img class="h-5 w-5" src="../assets/images/right-arrow.png" />
-    </button>
+      <img class="h-5 w-5" src="/images/right-arrow.png" />
+    </a>
   </section>
 </template>

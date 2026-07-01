@@ -30,13 +30,13 @@ const props = defineProps({
     <div
       class="mb-3 md:text-xl text-base font-medium grid md:gap-3 gap-2 grid-cols-[1fr_10fr] items-center"
     >
-      <img src="../assets/images/icon-document.png" />
+      <img src="/images/icon-document.png" />
       <p>: {{ topic }}</p>
 
-      <img src="../assets/images/icon-time.png" />
+      <img src="/images/icon-time.png" />
       <p>: {{ time }}</p>
 
-      <img src="../assets/images/icon-microphone.png" />
+      <img src="/images/icon-microphone.png" />
       <p>: {{ speaker }}</p>
     </div>
 

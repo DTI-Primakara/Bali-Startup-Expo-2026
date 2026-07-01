@@ -68,13 +68,13 @@ const props = defineProps({
         </p>
 
         <div class="grid-cols-[1fr_auto] gap-y-2 gap-x-2 grid items-center">
-          <img src="../assets/images/icon-calender.png" />
+          <img src="/images/icon-calender.png" />
           <p class="text-base font-medium">10 Juli 2026</p>
 
-          <img src="../assets/images/icon-time.png" />
+          <img src="/images/icon-time.png" />
           <p class="text-base font-medium">10:00-11:00 WITA</p>
 
-          <img src="../assets/images/icon-location.png" />
+          <img src="/images/icon-location.png" />
           <p class="text-base font-medium">Discovery Mall</p>
         </div>
       </div>

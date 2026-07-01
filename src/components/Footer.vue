@@ -3,7 +3,7 @@
     <div
       class="w-full mb-4 md:gap-0 gap-4 justify-between flex md:flex-row flex-col md:items-start items-center"
     >
-      <img class="md:h-max h-20 md:w-max w-20" src="../assets/images/logo-bse-color.png" />
+      <img class="md:h-max h-20 md:w-max w-20" src="/images/logo-bse-color.png" />
 
       <nav
         class="text-[#031446] md:text-3xl text-xl font-medium md:gap-3 flex flex-col md:items-start items-center"
@@ -21,15 +21,15 @@
       >
         <p class="font-bold">Media Sosial</p>
         <div class="flex items-center gap-1">
-          <img class="w-max h-max" src="../assets/images/instagram.png" />
+          <img class="w-max h-max" src="/images/instagram.png" />
           <a target="_blank" href="https://www.instagram.com/balistartupexpo">@balistartupexpo</a>
         </div>
         <div class="flex items-center gap-1">
-          <img class="w-max h-max" src="../assets/images/tiktok.png" />
+          <img class="w-max h-max" src="/images/tiktok.png" />
           <a target="_blank" href="https://www.tiktok.com/@bali.startup.expo">bali.startup.expo</a>
         </div>
         <div class="flex items-center gap-1">
-          <img class="w-max h-max" src="../assets/images/youtube.png" />
+          <img class="w-max h-max" src="/images/youtube.png" />
           <a target="_blank" href="https://www.youtube.com/@balistartupexpo9475"
             >Bali Startup Expo</a
           >
@@ -39,7 +39,7 @@
       <div class="gap-3 flex flex-col md:items-start items-center">
         <p class="font-bold text-[#031446] md:text-3xl text-xl">Organized by</p>
         <a target="_blank" href="https://primakara.ac.id"
-          ><img class="-mt-6 md:-ml-4" src="../assets/images/logo-primakara.png"
+          ><img class="-mt-6 md:-ml-4" src="/images/logo-primakara.png"
         /></a>
       </div>
     </div>
