@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('/fonts/Montserrat-VariableFont_wght.ttf');
+  src: url('./fonts/Montserrat-VariableFont_wght.ttf');
 }
 
 @theme {
@@ -18,73 +18,73 @@
 }
 
 .history-box {
-  background-image: url('/images/history-box.png');
+  background-image: url('./images/history-box.png');
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .winner-box-1 {
-  background-image: url('/images/winner-box-1.png');
+  background-image: url('./images/winner-box-1.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 
 .winner-box-2 {
-  background-image: url('/images/winner-box-2.png');
+  background-image: url('./images/winner-box-2.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 
 .winner-box-3 {
-  background-image: url('/images/winner-box-3.png');
+  background-image: url('./images/winner-box-3.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 
 .sponsor-box {
-  background-image: url('/images/sponsor-box.png');
+  background-image: url('./images/sponsor-box.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 
 .media-partner-box {
-  background-image: url('/images/media-partner-box.png');
+  background-image: url('./images/media-partner-box.png');
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .star-1 {
-  background-image: url('/images/star-1.png');
+  background-image: url('./images/star-1.png');
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
 }
 
 .star-2 {
-  background-image: url('/images/star-2.png');
+  background-image: url('./images/star-2.png');
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
 }
 
 .moon {
-  background-image: url('/images/moon.png');
+  background-image: url('./images/moon.png');
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .rocket {
-  background-image: url('/images/rocket.png');
+  background-image: url('./images/rocket.png');
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .introduction-section {
-  background-image: url('/images/bg-introduction.png');
+  background-image: url('./images/bg-introduction.png');
   background-repeat: no-repeat;
   background-size: cover;
 }

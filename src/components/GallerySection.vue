@@ -57,20 +57,20 @@ import { motion } from 'motion-v'
 
     <div class="grid grid-cols-21 gap-2">
       <!-- first row -->
-      <img class="col-span-6 h-full w-full object-cover" src="/images/gallery-1.png" />
-      <img class="col-span-5 h-full w-full object-cover" src="/images/gallery-2.png" />
-      <img class="col-span-10 h-full w-full object-cover" src="/images/gallery-3.png" />
+      <img class="col-span-6 h-full w-full object-cover" src="@/assets/images/gallery-1.png" />
+      <img class="col-span-5 h-full w-full object-cover" src="@/assets/images/gallery-2.png" />
+      <img class="col-span-10 h-full w-full object-cover" src="@/assets/images/gallery-3.png" />
 
       <!-- second row -->
-      <img class="col-span-8 h-full w-full object-cover" src="/images/gallery-4.png" />
-      <img class="col-span-7 h-full w-full object-cover" src="/images/gallery-5.png" />
-      <img class="col-span-6 h-full w-full object-cover" src="/images/gallery-6.png" />
+      <img class="col-span-8 h-full w-full object-cover" src="@/assets/images/gallery-4.png" />
+      <img class="col-span-7 h-full w-full object-cover" src="@/assets/images/gallery-5.png" />
+      <img class="col-span-6 h-full w-full object-cover" src="@/assets/images/gallery-6.png" />
 
       <!-- third row -->
-      <img class="col-span-5 h-full w-full object-cover" src="/images/gallery-7.png" />
-      <img class="col-span-6 h-full w-full object-cover" src="/images/gallery-8.png" />
-      <img class="col-span-5 h-full w-full object-cover" src="/images/gallery-9.png" />
-      <img class="col-span-5 h-full w-full object-cover" src="/images/gallery-10.png" />
+      <img class="col-span-5 h-full w-full object-cover" src="@/assets/images/gallery-7.png" />
+      <img class="col-span-6 h-full w-full object-cover" src="@/assets/images/gallery-8.png" />
+      <img class="col-span-5 h-full w-full object-cover" src="@/assets/images/gallery-9.png" />
+      <img class="col-span-5 h-full w-full object-cover" src="@/assets/images/gallery-10.png" />
     </div>
   </section>
 </template>

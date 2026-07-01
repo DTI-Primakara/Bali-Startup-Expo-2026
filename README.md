@@ -1,6 +1,6 @@
 # 🚀 Bali Start-Up Expo 2026 (BSE 2026)
 
-![BSE 2026 Logo](./public/images/logo-bse-color.png)
+![BSE 2026 Logo](./src/assets/images/logo-bse-color.png)
 
 **Ignite the Courage, Empower the Future**
 
@@ -48,9 +48,9 @@ The project follows a modular, component-based directory layout:
 
 ```
 ├── .vscode/                 # Editor configuration settings
-├── public/                  # Public assets (icons, images, etc.)
+├── public/                  # Static public assets (favicons, preview images, dynamic media partners)
 ├── src/
-│   ├── assets/              # Static assets, local logos, and media files
+│   ├── assets/              # Static assets resolved by the bundler (fonts, local images, main.css)
 │   ├── components/          # Modular Vue components
 │   │   ├── Header.vue       # Sticky navigation header with registration link
 │   │   ├── HeroSection.vue  # Banner section with countdown timer & event info

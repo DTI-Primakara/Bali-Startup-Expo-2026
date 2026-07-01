@@ -55,13 +55,13 @@ import ActivityBox from './ActivityBox.vue'
         </p>
 
         <div class="text-xl font-medium grid gap-2 grid-cols-[1fr_10fr] grid-rows-2 items-center">
-          <img src="/images/icon-time.png" />
+          <img src="@/assets/images/icon-time.png" />
           <p>: Validation & Market Fit</p>
 
-          <img src="/images/icon-document.png" />
+          <img src="@/assets/images/icon-document.png" />
           <p>: 09:00 - 12:00 WITA</p>
 
-          <img src="/images/icon-microphone.png" />
+          <img src="@/assets/images/icon-microphone.png" />
           <p>: I Wayan Indra Adhi Suputra, S.Kom.</p>
         </div> -->
       <ActivityBox

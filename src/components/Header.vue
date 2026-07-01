@@ -3,7 +3,7 @@
     class="w-9/10 flex justify-between items-center justify-self-center bg-white/6 shadow-[inset_0_0_1px_1px_rgba(255,255,255,0.35),inset_0_0_10px_1px_rgba(0,0,0,0.25)] backdrop-blur-md rounded-[10px] fixed top-10 pl-10 pr-10 pt-1 pb-1 z-999"
   >
     <a href="#hero" class="flex h-20">
-      <img src="/images/logo-bse.png" class="h-full" />
+      <img src="@/assets/images/logo-bse.png" class="h-full" />
     </a>
 
     <nav class="md:text-2xl text-base h-15 gap-4 flex font-medium items-center">
