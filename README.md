@@ -1,6 +1,6 @@
 # 🚀 Bali Start-Up Expo 2026 (BSE 2026)
 
-![BSE 2026 Logo](./src/assets/images/logo-bse-color.png)
+![BSE 2026 Logo](./public/images/logo-bse-color.png)
 
 **Ignite the Courage, Empower the Future**
 
