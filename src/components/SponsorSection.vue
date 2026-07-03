@@ -4,7 +4,7 @@ import { motion } from 'motion-v'
 
 <template>
   <section
-    class="md:mb-40 md:pl-20 md:pr-20 pl-5 pr-5 flex flex-col items-center justify-center text-center relative"
+    class="md:mb-40 md:pl-20 md:pr-20 pl-1 pr-1 flex flex-col items-center justify-center text-center relative"
   >
     <!-- shine decoration -->
     <div
@@ -45,7 +45,7 @@ import { motion } from 'motion-v'
       :while-in-view="{ y: 0, opacity: 1 }"
       :transition="{ duration: 0.4 }"
       :in-view-options="{ once: true }"
-      class="font-medium md:text-xl text-base"
+      class="pl-4 pr-4 font-medium md:text-xl text-base"
     >
       Acara ini terselenggara berkat dukungan luar biasa dari para mitra dan sponsor resmi kami.
     </motion.p>
