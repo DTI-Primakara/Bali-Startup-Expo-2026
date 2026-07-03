@@ -49,25 +49,12 @@ import { motion } from 'motion-v'
     >
       Acara ini terselenggara berkat dukungan luar biasa dari para mitra dan sponsor resmi kami.
     </motion.p>
-
+      <!-- sponsor box -->
     <motion.div
       :initial="{ y: 100, opacity: 0 }"
       :while-in-view="{ y: 0, opacity: 1 }"
       :transition="{ duration: 0.4 }"
       :in-view-options="{ once: true }"
-      class="w-full md:h-200 h-100 relative"
-    >
-      <!-- star decor -->
-      <div class="star-1 rotate-92 w-20 h-20 top-17 left-78 absolute z-50"></div>
-      <div class="star-1 rotate-78 w-20 h-20 bottom-35 md:-right-6 -right-12 absolute z-50"></div>
-
-      <!-- rocket decor -->
-      <div
-        class="rocket rotate-90 md:w-45 md:h-45 w-20 h-20 bottom-10 md:-left-20 -left-7 absolute z-50"
-      ></div>
-
-      <!-- sponsor box -->
-      <div class="sponsor-box absolute w-full md:h-200 h-80"></div>
-    </motion.div>
+      class="sponsor-box w-full md:h-200 h-80"></motion.div>
   </section>
 </template>
